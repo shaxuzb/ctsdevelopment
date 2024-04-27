@@ -1,0 +1,113 @@
+.project_choose_house{
+    position: relative;
+}
+.proj_home_parent{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home_class_img{
+    width: 444px;
+    transform: translateY(17%);
+}
+.containerAboutProj{
+    position: relative;
+}
+.aboutProj{
+    position: relative;
+}
+.aboutProj .header_text_parag_proj{
+    max-width: var(--maxwidth);
+    margin: auto;
+    position: relative;
+}
+.aboutProj .header_text_parag_proj h1{
+    color: #97815F;
+    font-size: 62px;
+    font-weight: 700;
+}
+.aboutProj .header_text_parag_proj p{
+    color: hsla(210, 25%, 16%, 0.50);
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 45px;
+}
+.img_about_proj{
+    max-width: var(--maxwidth);
+    margin: auto;
+    position: relative;
+    border-radius: 35px;
+    z-index: 1;
+    overflow: hidden;
+    margin-top: 70px;
+}
+
+.img_about_proj img{
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.about_addr_deadli_proj{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 0 40px 40px 40px;
+    background-image: linear-gradient( #0b5da900 60%,  #1E2832);
+
+}
+.about_addr_deadli_proj div span{
+    color: hsla(0, 0%, 100%, 0.70);
+    font-size: 16px;
+}
+.about_addr_deadli_proj div p{
+    color: #FFFEFD;
+    font-size: 18px;
+}
+.inform_about_proj_all{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 4vw;
+    align-items: center;
+    margin-top: 170px;
+}
+.inform_about_proj_all::before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: hsla(36, 23%, 48%, 0.25);
+}
+.inform_about_proj_all::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: hsla(36, 23%, 48%, 0.25);
+}
+.inform_about_proj_all > div{
+    text-align: center;
+    flex-shrink: 0;
+}
+.inform_about_proj_all .appartment_proj{
+    margin: 0 6vw;
+}
+.inform_about_proj_all > div h1{
+    font-size: 62px;
+    font-weight: 600;
+    color: #97815F;
+}
+.inform_about_proj_all > div > span{
+    display: inline-block;
+    font-size: 24px;
+    color: hsla(210, 25%, 16%, 0.25);
+    font-weight: 500;
+    margin-top: 22px;
+}

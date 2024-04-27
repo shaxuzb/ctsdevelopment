@@ -1,0 +1,18 @@
+:root{
+  --goldColor: #97815F;
+  --alitblack: #595959;
+  --alitblue: #798FA4;
+  --buttonColor: #0856A0;
+  --maxwidth: 1240px;
+  
+}
+::-webkit-scrollbar{
+    background-color: rgb(255, 255, 255);
+    width: 8px;
+    border: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #0856A0;
+  border-radius: 10px;
+}

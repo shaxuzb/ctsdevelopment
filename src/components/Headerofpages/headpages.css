@@ -1,0 +1,25 @@
+.header_text_pages .text_and_line {
+    position: relative;
+    display: flex;
+    align-items: end;
+    width: 200%;
+}
+.header_text_pages .text_and_line h1{
+    position: relative;
+    color: #000;
+    font-size: 62px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.header_text_pages .text_and_line span{
+    background-color: #5959593e;
+    height: 1px;
+    display: block;
+    width: 100%;
+    margin-right: 10px;
+}
+.header_text_pages p{
+    font-size: 16px;
+    color: #1E2832  ;
+    margin-top: 13px;
+}

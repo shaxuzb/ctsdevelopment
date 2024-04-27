@@ -1,0 +1,189 @@
+.project{
+    position: relative;
+    background-color: #ffffff;
+    margin-top: 150px;
+}
+.project_header_swipe_project{
+    position: relative;
+}
+.project_header{
+    position: relative;
+    max-width: var(--maxwidth);
+    margin: auto;
+}
+
+.swiper_projects_pr_dia{
+    height: 100%;
+    margin-top: 65px;
+    max-width: 1400px;
+    margin:65px auto 0;
+    background-color: rebeccapurple;
+}
+.swiper{
+    background-color: red;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    overflow: hidden;
+}
+.swiper-wrapper{
+    display: flex;
+    overflow: hidden;
+}
+.swiper-slide{
+    display: flex !important;
+    justify-content: space-between;
+    gap: 30px;
+    background-color: #fff;
+    height: 100%;
+}
+.swiper_left_right_element{
+    position: relative;
+    padding: 59px 50px 75px 80px;
+    border: 1px solid #97815faf;
+    border-radius: 20px;
+}
+.left_choosing_proje{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.left_choosing_proje .logo_project{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.left_choosing_proje .logo_project img{
+    width: 199px;
+}
+.left_choosing_proje .header_parag_left_proj{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.left_choosing_proje .header_parag_left_proj > h1{
+    font-size:  44px;
+    color: var(--goldColor);
+}
+.left_choosing_proje .header_parag_left_proj > p{
+    font-size: 20px;
+    color: #595959;
+    line-height: 30px;
+}
+
+.left_choosing_proje .header_parag_left_proj .about_project_left h1{
+    font-size: 32px;
+    font-weight: 600;
+
+}
+.left_choosing_proje .header_parag_left_proj .about_project_left p{
+    font-size: 14px;
+    color: #798FA4;
+    margin-top: 5px;
+}
+.left_choosing_proje .header_parag_left_proj .about_project_left{
+    display: flex;
+    justify-content: space-between;
+    margin: 65px 0;
+}
+.btn_link_to_project_navigation{
+    position: relative;
+}
+.btn_link_to_project_navigation a{
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--goldColor);
+    padding: 18px 55px;
+    font-size: 18px;
+    border-radius: 4px;
+}
+.right_img_project{
+    max-width: 700px;
+}
+.right_img_project img{
+    max-width: 100%;
+    border-radius: 20px;
+}
+@media (max-width: 1474px) {
+    .left_choosing_proje .header_parag_left_proj > h1{
+        font-size: 2.9vw;
+    }
+    .left_choosing_proje .header_parag_left_proj > p{
+        font-size: 1.35722vw;
+    }
+    .left_choosing_proje .header_parag_left_proj .about_project_left h1{
+        font-size: 2.17155vw;
+    }
+    .left_choosing_proje .header_parag_left_proj .about_project_left p{
+        font-size: 0.9501vw;
+        color: #798FA4;
+        margin-top: 5px;
+    }
+    .left_choosing_proje .header_parag_left_proj .about_project_left{
+        margin: 50px 0;
+    }
+}
+@media (max-width: 1290px) {
+    .left_choosing_proje .logo_project img{
+        width: 15.4vw;
+    }
+    .btn_link_to_project_navigation a{
+        padding: 1.396vw 4.27vw;
+        font-size: 1.397vw;
+    }
+    .left_choosing_proje .header_parag_left_proj > p{
+        font-size: 1.35722vw;
+    }
+    .left_choosing_proje .header_parag_left_proj .about_project_left{
+        margin: 3.88vw 0;
+    }
+    .swiper_left_right_element{
+        padding: 4vw;
+    }
+}
+.navigation_for_swiper{
+    position: absolute;
+    bottom: 77px;
+    width: 210px;
+    z-index: 1;
+    left: 30%;
+    display: flex;
+    align-items: center;
+}
+.swiper-button-prev{
+    width: 29px !important;
+    height: 29px !important;
+    background-color: #EFF1F8;
+    border-radius: 50%;
+    color: rgba(0, 0, 0, 0.726) !important;
+}
+.swiper-button-prev svg{
+    pointer-events: none !important;
+}
+.swiper-button-next{
+    width: 29px !important;
+    height: 29px !important;
+    background-color: #EFF1F8;
+    border-radius: 50%;
+    color: rgba(0, 0, 0, 0.726) !important;
+}
+.swiper-button-prev::after,.swiper-button-next::after{
+    display: none;
+}
+.swiper-pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.swiper-pagination span{
+    font-size: 20px;
+    font-weight: 600;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+}

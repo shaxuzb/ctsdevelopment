@@ -1,0 +1,55 @@
+{
+    "navbar":{
+        "li0": "Biz haqimizda",
+        "li1": "Proyektlar",
+        "li2": "Kontaktlar"
+    },
+    "home":{
+        "home_text1": "Kelajak O’zbekiston uchun",
+        "home_text2": "Zamonaviy <1 /> kompaniya"
+    },
+    "Project":{
+        "header_paragraf": "Qulay hayot uchun - qulay uylar",
+        "swipe_proj_header": "“DIAMOND PREMIUM RESIDENCE” turar-joy majmuasi",
+        "swipe_proj_header2": "“DIAMOND HOUSE” turar-joy majmuasi",
+        "swipe_proj_parag": "Ko'p yillik dunyo tajribasi, sifatli materiallar va sizning qulayligingizga mas'uliyatli yondashuvni o'zida mujassam etgan benuqson turar-joy majmuasi.",
+        "all_size": "Umumiy maydoni",
+        "apartment": "Kvartiralar",
+        "year_of_building": "Qurilish yili",
+        "btn_proj_text": "Batafsil"
+    },
+    "Ourskills":{
+        "ourheaderh": "Biz quyidagi ishlarni bajaramiz",
+        "ourheaderp": "Biz eng yangi texnologiyalar va tendentsiyalardan xizmatlarning eng yuqori sifatini ta'minlaydigan tarzda foydalanamiz",
+        "cards":{
+            "card0": "Qurilish loyihalarini<1 /> ishlab chiqish",
+            "card1": "Turar-joy bo'lmagan <1 /> va turar-joy binolarini  qurish",
+            "card2": "Uy-joy komplekslarini qurish",
+            "card3": "Ko'priklar va <1 />  tunnellarni qurish",
+            "card4": "Suv obyektlarini qurish",
+            "card5": "Neft va gaz zavodlarini <1 /> qurish",
+            "card6": "Avtomobil, temir<1 />  yo'l va metro<1 />  liniyalarini qurish",
+            "card7": "Savdo<1 />  majmualarini<1 />  qurish",
+            "card8": "Biz eng yuqori darajadagi sifat va professionallik bilan, mijozlarni qondirishga qaratilgan yetakchi qurilish kompaniyasi bo'lishga intilamiz"
+        }
+    },
+    "Aboutus":{
+        "cards":{
+            "cardh0": "Qurilish loyihalarini<111 /> ishlab chiqish",
+            "cardh1": "Turar-joy bo'lmagan <1 /> va turar-joy binolarini  qurish",
+            "cardh2": "Uy-joy komplekslarini qurish",
+            "cardh3": "Ko'priklar va <1 />  tunnellarni qurish",
+            "cardh4": "Suv obyektlarini qurish", 
+            "cardp0": "Qurilish loyihalarini<1 /> ishlab chiqish",
+            "cardp1": "Turar-joy bo'lmagan <1 /> va turar-joy binolarini  qurish",
+            "cardp2": "Uy-joy komplekslarini qurish",
+            "cardp3": "Ko'priklar va <1 />  tunnellarni qurish",
+            "cardp4": "Suv obyektlarini qurish" 
+        },
+        "purpose_card_parag":{
+            "parag_card0": "Bizning asosiy maqsadimiz - mijozlarimizning to'liq qoniqishi va ishonchini ta'minlash, loyihalarni eng yuqori darajadagi professionallik va sifat bilan amalga oshirish, belgilangan muddatlar va byudjetga rioya qilish va ekologik barqarorlik tamoyillariga rioya qilishdir.",
+            "parag_card1": "Biz mijozlar ehtiyojlarini eng yuqori darajadagi sifat va professionallik bilan qondirishga yo'naltirilgan yetakchi qurilish kompaniyasi bo'lishga intilamiz",
+            "parag_card2": "Kompaniyamizning maqsadi - mijozlarimizning ehtiyojlari va talablariga javob beradigan yuqori sifatli va innovatsion qurilish loyihalarini yaratish."
+        }
+    }
+}

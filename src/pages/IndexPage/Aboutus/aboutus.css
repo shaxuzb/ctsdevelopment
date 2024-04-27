@@ -1,0 +1,178 @@
+.home_page_img_aboutUs{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    display: flex;
+    justify-content: end;
+}
+.home_page_img_aboutUs img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+.home_page_img_aboutUs::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#1E2832, #0856a019 30%, #0856a01d 70%,#1E2832);
+    z-index: -1;
+}
+.home_page_img_aboutUs .parag_about_max_width{
+    z-index: 11;
+    width: var(--maxwidth);
+    margin: 0 auto;
+    display: flex;
+    align-self: flex-end;
+    padding-bottom: 100px;
+}
+.home_page_img_aboutUs .parag_about_max_width p{
+    font-size: 32px;
+    font-weight: 500;
+    color: #fffefd;
+}
+.card_about_parent{
+    background-color: #F5F5F5;
+    padding: 100px 0;
+    border-radius: 50px;
+    margin-top: 100px;
+}
+.card_about_us{
+    position: relative;
+    max-width: var(--maxwidth);
+    margin: auto;
+}
+.card_aboutUs{
+    margin-top: 65px;
+}
+.about_card_class{
+    position: relative;
+    height: 400px;
+    background-size: cover;
+    border-radius: 25px;
+    overflow: hidden;
+    z-index: 1;
+    padding-right: 15px;
+    box-shadow: 0 8px 16px -6px hsla(222, 52%, 19%, 0.080);
+    
+}
+.about_card_class .car_text{
+    padding: 35px 35px 0 ;
+}
+.about_card_class .car_text h1{
+    font-size: 30px;
+    color: #7D7F00;
+    font-weight: 700;
+}
+.about_card_class  span{
+    font-size: 32px;
+    color: #fff;
+}
+.about_card_class  p:not(:first-child){
+    font-size: 20px;
+    margin-top: 50px;
+    color: #798FA4;
+}
+.about_card_class  p:first-child{
+    font-size: 24px;
+    color: hsla(210, 25%, 16%, 0.75);
+    font-weight: 700;
+    float: left;
+}
+
+
+.about_card_class {
+    background-color: #fff;
+    color: #000;
+}
+
+.about_card_class  .img_last_card{
+    width: 200px;
+    height: 200px;
+}
+.purpose_company{
+    margin-top: 100px;
+}
+.child_purpose_comp{
+    position: relative;
+    max-width: var(--maxwidth);
+    margin: auto;
+    
+}
+.child_purpose_comp .parag_purpose_company{
+    position: relative;
+    border-radius: 45px;
+    padding: 100px 113px 250px 100px;
+    background-color: #fff;
+    box-shadow: 0 0px 14px -4px hsl(222, 53%, 19%, 0.12),
+    0 8px 8px -6px hsla(222, 52%, 19%, 0.12);
+    overflow: hidden;
+    margin-top: 50px;
+}
+.parag_purpose_company p:nth-child(1){
+    font-size: 32px;
+    color: hsla(210, 24%, 16%, 0.75);
+    font-weight: 600;
+
+}
+.parag_purpose_company p:nth-child(2){
+    font-size: 24px;
+    color: hsla(210, 24%, 16%, 0.75);
+    font-weight: 500;
+    margin: 80px 0;
+    max-width: 906px;
+}
+.parag_purpose_company p:nth-child(3){
+    font-size: 24px;
+    color: hsla(210, 25%, 16%, 0.50);
+    font-weight: 500;
+    max-width: 657px;
+}
+.parag_purpose_company img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.about_video_page{
+    margin-top: 140px;
+}
+.modal_open{
+    position: relative;
+    max-width: var(--maxwidth);
+    margin: auto;
+    border-radius: 35px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0px 14px -4px hsl(222, 53%, 19%),
+    0 8px 8px -6px hsla(222, 52%, 19%, 0.12);
+}
+.modal_open::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(222, 53%, 19%, 0.042);
+}
+.modal_open img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.play_modal_about_us{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: hsla(0, 0%, 100%, 0.75);
+    border-radius: 50%;
+    border: none;
+    font-size: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

@@ -1,0 +1,180 @@
+.news_id_page_parent{
+    position: relative;
+    margin-top: 150px;
+    padding-top: 50px;
+}
+.about_news_id_last_news{
+    max-width: var(--maxwidth);
+    margin:auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    gap: 20px;
+}
+.about_news_id{
+    position: relative;
+    max-width: 700px;
+}
+.about_news_id .header_about_id_news ul{
+    display: flex;
+    align-items: center;
+}
+.about_news_id .header_about_id_news ul li{
+    list-style: none;
+    font-size: 14px;
+    color: rgba(30, 40, 50, 0.25);
+    font-weight: 500;
+}
+.about_news_id .header_about_id_news ul li:not(:last-child)::after{
+    content: '';
+    position: relative;
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background-color: rgba(30, 40, 50, 0.25);
+    border-radius: 50%;
+    margin: auto 10px;
+    transform: translateY(-2px);
+}
+.about_news_id .title_api_id_news h1{
+    font-size: 40px;
+    margin: 35px 0;
+}
+.about_news_id .data_published_at_news p{
+    font-size: 14px;
+    color: rgba(30, 40, 50, 0.25);
+    font-weight: 500;
+}
+.about_news_id .parag_news_id{
+    margin-top: 69px;
+}
+.about_news_id .parag_news_id p{
+    font-size: 18px;
+    color: hsla(210, 25%, 16%, 0.75);
+    font-family: 500;
+}
+.about_news_id .parag_news_id p:not(:last-child){
+    margin-bottom: 20px;
+}
+.last_news{
+    max-width: 400px;
+}
+.last_news_card{
+    position: relative;
+    background-color: #f5f5f5;
+    padding: 35px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.last_news_card h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+.last_news_card .last_news_link{
+    position: relative;
+}
+.last_news_card .last_news_link div p{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.last_news_card .last_news_link div span{
+    font-size: 10px;
+    color: #1E2832;
+    display: inline-block;
+    margin-top: 10px;
+}
+.card_news_link_social{
+    position: relative;
+    padding: 35px;
+    background-color: #f5f5f5;
+    border-radius: 25px;
+    margin-top: 25px;
+}
+.card_news_link_social h1{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.card_news_link_social p {
+    font-size: 14px;
+    color: hsla(210, 25%, 16%, 0.75);
+    margin-top: 20px;
+}
+
+.link_social_news{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.link_social_news .list_social_link{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 50px;
+}
+.link_social_news .list_social_link a{
+    text-decoration: none;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: hsla(210, 25%, 16%, 0.75);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    color: #ffffff;
+}
+.link_social_news p{
+    font-size: 14px;
+    font-weight: 400;
+    color:hsla(210, 25%, 16%, 0.75);
+}
+.news_card_page_index{
+    margin-top: 150px;
+    background-color: #f5f5f5;
+    border-radius: 35px;
+    padding: 80px 0;
+}
+.news_car_view_maxthWidth{
+    max-width: var(--maxwidth);
+    margin: auto;
+}
+.news_card_page_index_max_width{
+    position: relative;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin-top: 80px;
+}
+.news_card_page_index_max_width .news{
+    max-width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 14px 24px hsla(222, 52%, 19%, 0.12),
+    0 8px 24px hsla(222, 52%, 19%, 0.12);
+
+}
+.news_card_page_index_max_width .news .text_news_date{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.news_card_page_index_max_width .news .text_news_date .text_title_news h1{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.news_card_page_index_max_width .news .text_news_date .text_title_news p{
+    font-size: 14px;
+    font-weight: 400;
+    color: hsla(210, 25%, 16%, 0.600);
+    line-height: 22.4px;
+}
+.news_card_page_index_max_width .news .text_news_date .date_news{
+    font-weight: 400;
+    color: hsla(210, 25%, 16%, 0.600);
+}

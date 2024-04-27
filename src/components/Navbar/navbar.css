@@ -1,0 +1,61 @@
+nav{
+   position: absolute;
+   width: 100%; 
+   top: 0;
+   z-index: 12;
+   padding: 50px 0 40px;
+}
+nav.active{
+    position: fixed;
+    top: -10%;
+    background-color: #fff;
+    animation: anim .2s linear forwards;
+    padding: 10px 0;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.136)
+
+}
+
+@keyframes anim{
+    0%{
+        top: -10%;
+    }
+    100%{
+        top: 0;
+    }
+}
+nav .navbar {
+    max-width: var(--maxwidth);
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+nav .navbar a img{
+    width: 189px;
+}
+nav .navbar .list_nav ul{
+    display: flex;
+}
+nav .navbar .list_nav ul li {
+    list-style: none;
+    font-size: 24px
+}
+nav .navbar .list_nav ul li:not(:first-child){
+    margin-left: 50px;
+}
+
+nav .navbar .list_nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: .2s;
+}
+nav .navbar .list_nav ul.proj_style_nav_list li a{
+    color: #798FA4;
+}
+nav .navbar .list_nav ul li a:hover{
+    color: blue;
+}
+nav.active .navbar .list_nav ul li a{
+    color: #000 ;
+}
