@@ -1,0 +1,26 @@
+.main_about_apartment{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px;
+}
+.div_image_about img{
+    width: 100%;
+    border-radius: 40px;
+}
+.about_apar_text h1{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 41px;
+    margin-top: 60px
+}
+.about_apar_text h1 span{
+    color: var(--goldColor);
+}
+.about_apar_text p{
+    font-size: 20px;
+    color: #595959;
+    line-height: 30px;
+}
+.about_apar_text p:nth-child(2){
+    margin: 70px 0 30px;
+}

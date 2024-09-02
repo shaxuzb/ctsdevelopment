@@ -1,50 +1,97 @@
-  import React, { useCallback, useEffect, useLayoutEffect, useState } from 'react'
-  import './App.css'
-  import Navbar from './components/Navbar/Navbar'
-  import Home from './pages/PagesMain/Home/Home'
-  import Project from './pages/PagesMain/Projects/Project'
-  import OurSkills from './pages/PagesMain/OurSkills/OurSkills'
-  import Aboutuslink from './pages/PagesMain/Aboutus/Aboutuslink'
-  import { useTranslation } from 'react-i18next'
-  import Control from './pages/PagesMain/Control/Control'
-  import Partners from './pages/PagesMain/Partners/Partners'
-  import News from './pages/PagesMain/News/News'
-import Mapcts from './pages/PagesMain/Mapcts/Mapcts'
-import Footer from './pages/PagesMain/Footer/Footer'
-import { useLocation } from 'react-router-dom'
-  function App() {
-    const [langTF, setLangTF] = useState(false)
-    const { i18n } = useTranslation();
-    const changeLanguage =  useCallback(() => {
-      setLangTF(prevLangTF => !prevLangTF)
-    }, [] )
-    const location = useLocation();
+import React, { useLayoutEffect, cloneElement, Suspense } from 'react'
 
-    // scroll to top of page after a page transition.
-    useLayoutEffect(() => {
+import './App.css'
+import Main from './pages/IndexPage/Main/Main';
+import AboutUs from './pages/IndexPage/Aboutus/AboutUs';
+import ProjectPremium from './pages/IndexPage/Projects/Projectpremium/ProjectPremium';
+import ProjectHouse from './pages/IndexPage/Projects/Projecthouse/ProjectHouse';
+import SelectFloor from './pages/IndexPage/SelectFloor/SelectFloor';
+import NewsIdPage from './components/NewsIdPage/NewsIdPage';
+import News from './pages/IndexPage/NewsPage/NewsIndex';
+import { AnimatePresence } from "framer-motion";
+import { useLocation, useRoutes } from "react-router-dom";
+import Floor from './components/Floor/Floor';
+import Selectplan from './components/SelectPlan/Selectplan';
+import RoomsLayout from './components/RoomsLayoutPlan/RoomsLayout';
+import Selectaparments from './pages/IndexPage/SelectApartments/Selectaparments';
+import ProjectPage from './pages/IndexPage/Projects/Projects/ProjectPage';
+import Login from './pages/login/Login';
+function App() {
+  const location = useLocation()
+  useLayoutEffect(() => {
+      setTimeout(()=>{
         document.documentElement.scrollTo({ top:0, left:0, behavior: "instant" });
-    }, [location.pathname]);
-    useEffect(()=>{
-      i18n.changeLanguage(langTF? "ru": "uz")
-    }, [langTF, i18n])
-    return (
-      
-        <div className='container'>
+      },1000)
+  }, [location.pathname]);
+  const pages = useRoutes([
+    {
+        path: "/",
+        element: <Main />
+    },
+    {
+      path: "/login",
+      element: <Login />
+    },
+    {
+        path: "/aboutus",
+        element: <AboutUs />
+    },
+    {
+        path: "/projects",
+        element: <ProjectPage />
+    },
+    {
+        path: "/project-premium",
+        element: <ProjectPremium />
+    },
+    {
+        path: "/project-house",
+        element: <ProjectHouse />
+    },
+    {
+      path: "/select-apartment",
+      element: <Selectaparments />
+    },
+    {
+        path: "/:projectName/:projIndex/blok-id/:idBlock",
+        element: <SelectFloor />,
+        children:[
+          {
+            path: "/:projectName/:projIndex/blok-id/:idBlock",
+            element: <Floor />
+          },
+          {
+            path: "/:projectName/:projIndex/blok-id/:idBlock/floor/:id",
+            element: <Selectplan />
+          },
+          {
+            path: "/:projectName/:projIndex/blok-id/:idBlock/floor/:id/room/:roomId/indexRoom/:indexRoom",
+            element: <RoomsLayout />,
+            errorElement:<div>303</div>
+          }
+        ]
+    },
+    {
+        path: "/news",
+        element: <News />
         
-          <Navbar />
-          <Home />
-          <Project />
-          <OurSkills />
-          <Aboutuslink />
-          <Control />
-          <Partners />
-          <News />
-          <Mapcts />
-          <Footer />
-          <button style={{position: "fixed", top: '160px'}} onClick={changeLanguage}>vhange</button>
-        </div>
-      
-    )
-  }
+    },
+    {
+        path: "/news/newsId/:id",
+        element: <NewsIdPage />
+    }
+])
+
+if(!pages) return null
+  return (
+
+    <AnimatePresence mode='wait'>
+      {
+        cloneElement(pages, {key: location.pathname})
+      }
+    </AnimatePresence>
+    
+  )
+}
 
   export default React.memo(App);

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
 import { useNavigate } from "react-router-dom"
+import Axios from "../../api/axios/Axios";
 import ClipLoader from "react-spinners/ClipLoader";
-import { color } from "framer-motion";
 const NewsCard = ({limit,navigate_news_index}) => {
     const [getApiNews, setGetApiNews] = useState([])
     const [ loading , setLoading ] = useState(true)
@@ -11,8 +11,10 @@ const NewsCard = ({limit,navigate_news_index}) => {
     async function fetchApi(){
         try{
             setLoading(true)
-            await axios.get(`https://api.spaceflightnewsapi.net/v4/articles/?limit=${limit}`).then(datas =>{
-            setGetApiNews(datas.data.results);
+            await Axios.get(`/admin/news/index`).then(datas =>{
+            setGetApiNews(datas?.data?.data?.data);
+            console.log(datas);
+            
                 setLoading(false)
         })
         }
@@ -29,19 +31,21 @@ const NewsCard = ({limit,navigate_news_index}) => {
         {
         
         getApiNews.map((getApiNew, index)=>{
-            const matchTime = getApiNew.published_at
+            const matchTime = getApiNew.title
             let setara = matchTime.search('T')
             let rest = matchTime.slice(0,setara);
             let result  = rest.split('-')
             let finishedRes = `${result[2]}.${result[1]}.${result[0]}`
             return(
-                <>
-                <div className="news" key={index} onClick={()=> navigate_news_index? navigate(navigate_news_index): navigate(`newsId/${getApiNew.id}`)} style={{cursor:'pointer'}} >
+                <div className="news" key={index + "news_card_component"} onClick={()=> navigate_news_index? navigate(navigate_news_index+`/newsId/${getApiNew.id}`): navigate(`newsId/${getApiNew.id}`)} style={{cursor:'pointer'}} >
                   
                     <div className="text_news_date">
                         <div className="text_title_news">
                             <h1>{getApiNew.title}</h1>
-                            <p>{getApiNew.summary}</p>
+                            <div
+										className="selected-news-body"
+										dangerouslySetInnerHTML={{ __html: getApiNew?.body }}
+									></div>
                         </div>
                         <div className="date_news">
                             <p>{finishedRes}</p>
@@ -49,11 +53,9 @@ const NewsCard = ({limit,navigate_news_index}) => {
                     </div>
                     
                 </div>
-                </>
             )
         })
        
-        
     }
     {
         loading? <div className="loading_spinner">

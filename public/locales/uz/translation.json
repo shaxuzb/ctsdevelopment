@@ -34,22 +34,160 @@
         }
     },
     "Aboutus":{
+        "headingaboutus":{
+            "phead": "Biz ilg'or yechimlar va yuqori samaradorlikni taqdim etish orqali sanoat yetakchisi bo'lishga intilamiz.",
+            "h1headdream": "Kompaniya qadriyatlari",
+            "pheaddream": "Bizning qadriyatlarimiz, muvaffaqiyatimizning asosi ekanligiga ishonamiz va mijozlarimiz uchun baxtni qurishga yordam beramiz",
+            "dreamsech1": "Kompaniya maqsadi"
+        },
         "cards":{
-            "cardh0": "Qurilish loyihalarini<111 /> ishlab chiqish",
-            "cardh1": "Turar-joy bo'lmagan <1 /> va turar-joy binolarini  qurish",
-            "cardh2": "Uy-joy komplekslarini qurish",
-            "cardh3": "Ko'priklar va <1 />  tunnellarni qurish",
-            "cardh4": "Suv obyektlarini qurish", 
-            "cardp0": "Qurilish loyihalarini<1 /> ishlab chiqish",
-            "cardp1": "Turar-joy bo'lmagan <1 /> va turar-joy binolarini  qurish",
-            "cardp2": "Uy-joy komplekslarini qurish",
-            "cardp3": "Ko'priklar va <1 />  tunnellarni qurish",
-            "cardp4": "Suv obyektlarini qurish" 
+            "cardh0": "Mijozlarga yo'naltirilgan",
+            "cardh1": "Sifat va professionallik",
+            "cardh2": "Ijodkorlik va innovatsiyalar",
+            "cardh3": "Ijodkorlik va innovatsiyalar",
+            "cardh4": "Ijtimoiy mas'uliyat", 
+            "cardp0": "Biz mijozlarimizning baxtini yaratamiz, ularni yaratish biz uchun ustuvor vazifadir.",
+            "cardp1": "Biz mukammallikka intilamiz va har bir loyihaga yuqori sifat standartlari amalga oshirilishini ta'minlaymiz",
+            "cardp2": "Innovatsion, kreativ va ijodiy g'oyalar bizga qarashlarni jalb qiladigan va barchani hayratda qoldiradigan loyihalarni yaratishga yordam beradi.",
+            "cardp3": "Biz mijozlarimiz bilan halollik va ishonchlilik asosida uzoq muddatli munosabatlarni o'rnatamiz.",
+            "cardp4": "Biz atrof-muhitga salbiy ta'sirni minimallashtirish va barcha qurilish jarayonlarini ekologik barqarorlikni hisobga olgan holda amalga oshirishga intilamiz." 
         },
         "purpose_card_parag":{
             "parag_card0": "Bizning asosiy maqsadimiz - mijozlarimizning to'liq qoniqishi va ishonchini ta'minlash, loyihalarni eng yuqori darajadagi professionallik va sifat bilan amalga oshirish, belgilangan muddatlar va byudjetga rioya qilish va ekologik barqarorlik tamoyillariga rioya qilishdir.",
             "parag_card1": "Biz mijozlar ehtiyojlarini eng yuqori darajadagi sifat va professionallik bilan qondirishga yo'naltirilgan yetakchi qurilish kompaniyasi bo'lishga intilamiz",
             "parag_card2": "Kompaniyamizning maqsadi - mijozlarimizning ehtiyojlari va talablariga javob beradigan yuqori sifatli va innovatsion qurilish loyihalarini yaratish."
         }
+    },
+    "Controls":{
+        "contH1": "Developmentning barcha bosqichlarini nazorat qilish",
+        "contP": "Kontseptsiya, dizayn va qurilish ishlab chiqilgan paytdan boshlab ob'ektlarni amalga oshirish va boshqarishgacha."
+    },
+    "Ourpartners":{
+        "ourpartH1": "Bizning hamkorlarimiz",
+        "ourpartP": "Bizning strategik ittifoqlarimizda faqat taniqli brendlar o'z o'rnini topadi, masalan:"
+    },
+    "News":{
+        "headingH1":"Yangiliklar",
+        "seemorenews": "Boshqa xabarlar",
+        "mainnews": "Bosh sahifa",
+        "lastNews": "So'ngi yangiliklar",
+        "sociallinkdesc":{
+            "socialdeskp": "Barcha yangiliklardan xabardor bo'ling!",
+            "socialdeskpspan": "ijtimoiy tarmoqlarimizga obuna bo'ling."
+
+        },
+        "buttonseemore": "Barcha yangiliklar",
+        "allNews": "Barcha yangiliklar",
+        "linkbuttonnewsindex":{
+            "newsindexh1": "Kompaniyaning yangiliklari",
+            "newsindexp": "“CTS UNITED DEVELOPMENT” sungi yangiliklari haqida – o'qing va ma'lumotga ega buling"
+        }
+
+    },
+    "Footer":{
+        "callforminph": "Qayta qong’iroq",
+        "callforminname": "Ism*",
+        "callformintel": "Telefon*",
+        "callformincomment": "Izoh qoldiring",
+        "addressFooter": "Toshkent shahri, Sergeli tumani, fayzli ko'chasi-3",
+        "call": "Qayta qong’iroq"
+    },
+    "Projects": {
+        "buttonsgenplan":{
+            "genplan": "Genplan",
+            "mapgenplan": "Karta"
+        },
+        "specialprice": "Maxsus chegirma",
+        "apartmenAbout":{
+            "h11": "<1>Diamond Premium House</1> kvartiralarida har bir metr batafsil o'ylab topilgan - sxemalarda biz barcha bo'sh joydan foydalanish usullarini batafsil hisoblaymiz.",
+            "h1":"<1>Diamond House</1> kvartiralarida har bir metr batafsil o'ylab topilgan - sxemalarda biz barcha bo'sh joydan foydalanish usullarini batafsil hisoblaymiz.",
+            "p1": "Masalan, oshxona-yashash xonasi va maxsus yuvinish xonasi bo'lgan kvartira katta oilaga mos keladi, va kimdir uchun katta kiyinish xonasi bo'lgan keng yotoq xonasi muhimroq-bo'shliqlar maksimal foyda keltiradigan tarzda yaratilgan.",
+            "p2": "Ushbu yondashuv tasavvur qilish uchun joy qoldiradi va sizga mos keladigan kvartirani 'moslashtirish' imkoniyatini beradi."
+        },
+        "headinglife":{
+            "h1": "DIAMOND <br /> HOUSEDAGI HAYOT",
+            "p": "'Diamond House' aholisi dam olish joylari, sport va o'yin maydonchalari bilan ta'minlangan hovli parkidagi ish va uy ishlaridan chalg'itib roxat beradi."
+        },
+        "imagesdesclife":{
+            "p0": "O'yin maydonchalari",
+            "p1": "Hovlidagi Park",
+            "p2": "Sport maydonchalari",
+            "p3": "Yorqin birinchi qavatlar",
+            "p4": "Keng liftlar",
+            "p5": "Tayyor dekor",
+            "p6": "Kafe va restoranlar",
+            "p7": "Do'konlar"
+        },
+        "planirovka":{
+            "heading": "Arxitektura rejasi",
+            "floor": "Qavat",
+            "numofrooms": "Xonalar soni",
+            "viewphoto": "Fotosuratni ko'rish"
+        },
+        "otdelapartment":{
+            "heading": "Ta’mirlangan xonadon",
+            "headingRoomLayout": "Qisqacha xarakteristikalar",
+            "buttonswipe0": "Kirish zali",
+            "buttonswipe1": "Zal",
+            "buttonswipe2": "Yotoqxona",
+            "buttonswipe3": "Oshxona",
+            "buttonswipe4": "Hammom",
+            "buttonswipe6": "Zal",
+            "buttonswipe7": "Umumiy xona",
+            "buttonswipe8": "Balkon",
+            "viewotheproject": "Boshqa loyihalarni ko'rish",
+            "dateTo": "Proyetkni bitishi",
+            "sizeRoom": "Xonalar maydoni"
+        },
+        "deadline_send":{
+            "span1": "Manzil:",
+            "span2": "Qurilish muddati:",
+            "address": "Olmaliq shahri, Abdulla Qahhara ko'chasi 30, “Yangi O'zbekiston” loyihasi",
+            "date": "2024-yil dekabr"
+        },
+        "shaxmatka":{
+            "filter":{
+               "filt": "Filtr",
+               "headPage": "Kvartira tanlash",
+               "object": "Loyihani tanlang",
+               "room": "Xonalar sonini tanlang",
+               "square": "Maydonni tanlang",
+               "stage": "Qavat",
+               "korpus": "Korpus",
+               "clearFilter": "Filtrni tozalash",
+               "bigSize": "Katta maydondan boshlab",
+               "smallSize": "Kichkina maydondan boshlab"
+            },
+            "card":{
+                "sxema": "Sxema",   
+                "proj": "Proyekt",   
+                "square": "Maydon",   
+                "roomable": "Xonalar"   
+            }
+        }
+    },
+    "selectPlan":{
+        "backToPageKorpus": "Korpusni tanlashga qaytish",
+        "backToPageFloor": "Korpusni tanlashga qaytish",
+        "selectFloor": "Xonadon tanlash",
+        "zbron": "Bron qilish",
+        "konsultatsiya": "So’rov qoldirish",
+        "komnatnost": "xonalik",
+        "freeRooms": "{{free_rooms}} ta kvartira mavjud",
+        "komnatnost2": "xonalik",
+        "apartment": "Kvartira",
+        "podrobnee":"Kvartirani tanlash",
+        "floorFrom": "{{selectFloor}} qavat {{maxFloor}} dan"
+    },
+    "viewPlan":{
+        "roomIndex": "{{roomIndex}}-xonalik kvartira",
+        "planirovka": "Kvartira rejasi",
+        "stagePlan": "Qavat rejasi",
+        "visual": "Vizualizatsiya",
+        "getPhone" : "Qayta qong’iroq"
+    },
+    "Notification":{
+        "success": "So'rov muvaffaqiyatli jo'natildi",
+        "noVisualNot": "Visual rasmlar yuklanmagan."
     }
 }

@@ -1,0 +1,65 @@
+.mapGeoplan{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin-top: 170px;
+}
+.mapGeoplan img{
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.mapGeoplan::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.068) ;
+}
+.mapGeoplan svg{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+.mapGeoplan svg a{
+    background-color: transparent;
+}
+.mapGeoplan svg a path{
+    display: inline-block;
+    fill:  rgba(20, 102, 255, 0);
+    animation: animatepathimage 3s linear infinite ;
+    z-index: 2131231;
+    transition: 1s;
+    -webkit-transition: 1s;
+}
+@keyframes animatepathimage {
+    0%{
+        fill: rgba(20, 102, 255, 0); 
+    }
+    50%{
+        fill: rgba(20, 102, 255, 0.233);
+    }
+    100%{
+        fill: rgba(20, 102, 255, 0); 
+    }
+}
+
+.mapGeoplan svg a:hover path{
+    animation: none;
+    fill: rgba(20, 102, 255, 0.425);
+}
+.block_card_geoplan{
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+    border-radius: 30px;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

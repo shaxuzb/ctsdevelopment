@@ -1,18 +1,24 @@
 :root{
+  --maincolor: #1E2832;
   --goldColor: #97815F;
   --alitblack: #595959;
   --alitblue: #798FA4;
   --buttonColor: #0856A0;
+  --familyUnbounded: "Unbounded", sans-serif;
   --maxwidth: 1240px;
-  
+  color: var(--maincolor);
 }
 ::-webkit-scrollbar{
-    background-color: rgb(255, 255, 255);
-    width: 8px;
+    background-color: rgba(255, 255, 255, 0);
+    width: 0px;
     border: 10px;
 }
 
 ::-webkit-scrollbar-thumb{
   background-color: #0856A0;
   border-radius: 10px;
+}
+body{
+  position: relative;
+  width: 100%;
 }

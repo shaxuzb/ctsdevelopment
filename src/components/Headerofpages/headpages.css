@@ -7,7 +7,7 @@
 .header_text_pages .text_and_line h1{
     position: relative;
     color: #000;
-    font-size: 62px;
+    font-size: clamp(35px,5vw,62px);
     flex-grow: 0;
     flex-shrink: 0;
 }
@@ -17,9 +17,10 @@
     display: block;
     width: 100%;
     margin-right: 10px;
+    margin-left: 30px;
 }
 .header_text_pages p{
-    font-size: 16px;
+    font-size: clamp(12px,1.2vw,16px);
     color: #1E2832  ;
     margin-top: 13px;
 }

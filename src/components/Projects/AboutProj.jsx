@@ -12,12 +12,12 @@ const AboutProj = ({header_text_h1_proj, header_text_parag_proj, image_proj_abou
           <img src={image_proj_about} alt={image_proj_about} />
           <div className="about_addr_deadli_proj">
             <div className="addres_proj">
-              <span>Адрес:</span>
-              <p>{addres_proj}</p>
+              <span>{t("Projects.deadline_send.span1")}</span>
+              <p>{t(addres_proj)}</p>
             </div>
             <div className="deadline_proj">
-              <span>Срок сдачи:</span>
-              <p>{deadline_proj}</p>
+              <span>{t("Projects.deadline_send.span2")}</span>
+              <p>{t(deadline_proj)}</p>
             </div>
           </div>
         </div>

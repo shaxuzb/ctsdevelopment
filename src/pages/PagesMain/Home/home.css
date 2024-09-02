@@ -4,7 +4,7 @@
 }
 .back_image_home{
     position: relative;
-    background-image: url('./homePage.jpg');
+    background-image: url('./homePage.webp');
     background-position: center;
     height: 900px;
     width: 100%;
@@ -33,13 +33,14 @@
     margin: auto;
     display: flex;
     align-items: center;
-    
+    padding: 0 20px;
 }
 .back_image_home .max_width .text_home p{
-    font-size: max(2vw, 46px);
+    font-size: clamp(36px, 4vw, 46px);
+    
     color: #fff;
 }
 .back_image_home .max_width .text_home h1{
-    font-size: 86px;
+    font-size: clamp(60px, 6vw, 86px);
     color: #fff;
 }

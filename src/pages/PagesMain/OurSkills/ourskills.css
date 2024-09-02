@@ -9,6 +9,7 @@
     position: relative;
     max-width: var(--maxwidth);
     margin: auto;
+    padding: 0 20px;
 }
 .ourskills .our_skills_header .text_and_line {
     position: relative;
@@ -19,7 +20,15 @@
 .ourskills .our_skills_header .text_and_line h1{
     position: relative;
     color: #000;
-    font-size: 60px;
+    flex-shrink: 1;
+    font-size: clamp(35px,5vw,60px);
+    text-wrap: nowrap;
+    
+}
+@media (max-width: 650px) {
+    .ourskills .our_skills_header .text_and_line h1{
+        text-wrap: wrap;
+    }
 }
 .ourskills .our_skills_header .text_and_line span{
     background-color: #5959593e;
@@ -28,7 +37,7 @@
     width: 100%;
 }
 .ourskills .our_skills_header p{
-    font-size: 16px;
+    font-size: clamp(12px,1.2vw,16px);
     color: #1E2832  ;
     margin-top: 13px;
 }
@@ -37,6 +46,7 @@
     max-width: var(--maxwidth);
     margin: auto;
     margin-top: 65px;
+    padding: 0 20px;
 }
 .cards_items{
     position: relative;
@@ -59,16 +69,16 @@
     display: flex;
 }
 .ourskill_card_class  span{
-    font-size: 32px;
+    font-size: clamp(24px,4vw,32px);
     color: #fff;
 }
 .ourskill_card_class  p:not(:first-child){
-    font-size: 24px;
+    font-size: clamp(20px,2vw,24px);
     color: #fff;
     margin-left: 15px;
 }
 .ourskill_card_class  p:first-child{
-    font-size: 24px;
+    font-size: clamp(20px,2vw,24px);
     float: left;
 }
 
@@ -90,4 +100,9 @@
     height: 200px;
     margin-top: 100px;
     margin-left: -130px;
+}
+.ourSkillsLast{
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }

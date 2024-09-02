@@ -10,40 +10,44 @@
     position: relative;
     max-width: var(--maxwidth);
     margin: auto;
+    padding: 0 20px;
 }
 
 .swiper_projects_pr_dia{
     height: 100%;
     margin-top: 65px;
     max-width: 1400px;
-    margin:65px auto 0;
-    background-color: rebeccapurple;
+    margin: 65px auto 0;
+    padding: 0 20px;    
 }
-.swiper{
-    background-color: red;
+.swiper_projects_pr_dia .swiper{
     height: 100%;
     position: relative;
     width: 100%;
     display: flex;
-    background-color: #fff;
     overflow: hidden;
+
 }
-.swiper-wrapper{
-    display: flex;
-    overflow: hidden;
-}
-.swiper-slide{
+.swiper_projects_pr_dia .swiper-slide{
     display: flex !important;
     justify-content: space-between;
     gap: 30px;
-    background-color: #fff;
+    background-color: #ffffff;
     height: 100%;
+    overflow: visible;
 }
 .swiper_left_right_element{
     position: relative;
-    padding: 59px 50px 75px 80px;
+    padding: 50px 50px 75px 60px;
     border: 1px solid #97815faf;
     border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+@media (max-width: 830px) {
+    .swiper_left_right_element{
+        padding: 20px 25px 35px 40px;
+    }
 }
 .left_choosing_proje{
     position: relative;
@@ -58,6 +62,7 @@
 }
 .left_choosing_proje .logo_project img{
     width: 199px;
+    margin-bottom: 30px;
 }
 .left_choosing_proje .header_parag_left_proj{
     display: flex;
@@ -66,103 +71,91 @@
     height: 100%;
 }
 .left_choosing_proje .header_parag_left_proj > h1{
-    font-size:  44px;
+    font-size:  clamp(24px,3vw,44px);
     color: var(--goldColor);
 }
 .left_choosing_proje .header_parag_left_proj > p{
-    font-size: 20px;
+    font-size: clamp(16px,2vw,20px);
     color: #595959;
     line-height: 30px;
 }
 
 .left_choosing_proje .header_parag_left_proj .about_project_left h1{
-    font-size: 32px;
+    font-size: clamp(23px,3vw,32px);
     font-weight: 600;
 
 }
 .left_choosing_proje .header_parag_left_proj .about_project_left p{
-    font-size: 14px;
+    font-size: clamp(10px,1.4vw,14px);
     color: #798FA4;
     margin-top: 5px;
 }
 .left_choosing_proje .header_parag_left_proj .about_project_left{
     display: flex;
     justify-content: space-between;
-    margin: 65px 0;
+    align-items: center;
+    margin: 50px 0;
 }
 .btn_link_to_project_navigation{
     position: relative;
+    display: flex;
+    align-items: center;
 }
 .btn_link_to_project_navigation a{
     text-decoration: none;
     color: #fff;
     background-color: var(--goldColor);
     padding: 18px 55px;
-    font-size: 18px;
+    font-size: clamp(13px,2vw,18px);
     border-radius: 4px;
+    transition: .3s;
+}
+@media (max-width: 610px) {
+    .btn_link_to_project_navigation a{
+        padding: 12px 42px;
+    }
 }
 .right_img_project{
-    max-width: 700px;
-}
-.right_img_project img{
-    max-width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
     border-radius: 20px;
 }
-@media (max-width: 1474px) {
-    .left_choosing_proje .header_parag_left_proj > h1{
-        font-size: 2.9vw;
-    }
-    .left_choosing_proje .header_parag_left_proj > p{
-        font-size: 1.35722vw;
-    }
-    .left_choosing_proje .header_parag_left_proj .about_project_left h1{
-        font-size: 2.17155vw;
-    }
-    .left_choosing_proje .header_parag_left_proj .about_project_left p{
-        font-size: 0.9501vw;
-        color: #798FA4;
-        margin-top: 5px;
-    }
-    .left_choosing_proje .header_parag_left_proj .about_project_left{
-        margin: 50px 0;
-    }
+.right_img_project img{
+    height: 105%;
+    object-fit: cover;
+    border-radius: 20px;
 }
-@media (max-width: 1290px) {
-    .left_choosing_proje .logo_project img{
-        width: 15.4vw;
-    }
-    .btn_link_to_project_navigation a{
-        padding: 1.396vw 4.27vw;
-        font-size: 1.397vw;
-    }
-    .left_choosing_proje .header_parag_left_proj > p{
-        font-size: 1.35722vw;
-    }
-    .left_choosing_proje .header_parag_left_proj .about_project_left{
-        margin: 3.88vw 0;
-    }
-    .swiper_left_right_element{
-        padding: 4vw;
-    }
+.btn_link_to_project_navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .navigation_for_swiper{
-    position: absolute;
-    bottom: 77px;
+    position: relative;
     width: 210px;
     z-index: 1;
-    left: 30%;
     display: flex;
     align-items: center;
+    height: 100%;
+    transition: .3;
+    z-index: 4;
 }
 .swiper-button-prev{
     width: 29px !important;
     height: 29px !important;
-    background-color: #EFF1F8;
+    background-color: hsl(227, 39%, 95%);
     border-radius: 50%;
     color: rgba(0, 0, 0, 0.726) !important;
+    z-index: 4 !important;
+    top: 50% !important;
 }
 .swiper-button-prev svg{
     pointer-events: none !important;
+    
 }
 .swiper-button-next{
     width: 29px !important;
@@ -170,6 +163,7 @@
     background-color: #EFF1F8;
     border-radius: 50%;
     color: rgba(0, 0, 0, 0.726) !important;
+    z-index: 4 !important;
 }
 .swiper-button-prev::after,.swiper-button-next::after{
     display: none;
@@ -179,6 +173,8 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    z-index: 1 !important;
+
 }
 .swiper-pagination span{
     font-size: 20px;
@@ -186,4 +182,37 @@
     width: 20px;
     height: 20px;
     background-color: transparent;
+}
+
+
+@media (max-width: 1100px) {
+    .left_choosing_proje .logo_project img{
+        width: 190px;
+    }
+    .right_img_project{
+        display: none;
+    }
+   
+}
+.second_swiper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: -10px;
+    gap: 11px;
+    z-index: 1;
+}
+.second_swiper button{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 4px;
+}
+.opacityBtnSwipe{
+    opacity: .3;
+    transition: .3s;
 }

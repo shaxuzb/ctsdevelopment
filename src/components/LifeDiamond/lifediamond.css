@@ -1,0 +1,46 @@
+.container_image_life{
+    max-width: var(--maxwidth);
+    margin: auto;
+}
+.container_image_life  .text_images_life p{
+    font-size: 20px;
+    margin-top: 40px;
+}
+.images_grid_life{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    margin-top: 80px;
+}
+.images_grid_life .container_img_text .img_life {
+    overflow: hidden;
+    max-width: 280px;
+    height: 300px;
+    border-radius: 15px;
+}
+.images_grid_life .container_img_text .text_life{
+    margin-top: 16px;
+}
+.images_grid_life .container_img_text .text_life p{
+    font-size: 25px;
+    color: hsla(210, 25%, 16%, 0.50);
+    
+}
+.images_grid_life .container_img_text:nth-child(2n) .img_life{
+    height: 250px;
+}
+.images_grid_life .container_img_text:nth-child(2n+5) .img_life{
+    height: 250px;
+}
+.images_grid_life .container_img_text:nth-child(2n+6) .img_life{
+    height: 300px;
+}
+.images_grid_life .container_img_text:nth-child(1n+5){
+    display: flex;
+    align-items: center;
+}
+.images_grid_life .container_img_text .img_life img{
+    height: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,373 @@
+.room_layout{
+    position: relative;
+    margin-top: 170px;
+    background-color: #F4F6FB;
+    padding-top: 35px;
+    padding-bottom: 100px;
+}
+.max_width_room_layout{
+    position: relative;
+    max-width: var(--maxwidth);
+    margin: auto;
+    display: flex;
+}
+.swiper_rooms_layout{
+    position: relative;
+    width: 100%;
+}
+.swiper_stiky_position{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 120px;
+}
+.swiper_stiky_position .swiper{
+    top: 0px;
+    left: 0;
+    max-width: 840px;
+    background-color: transparent;
+}
+.swiper_stiky_position .swiper .swiper-wrapper{
+    background-color: transparent;
+    
+}
+.swiper_stiky_position .swiper  .swiper-wrapper .swiper-slide{
+    position: relative;
+    background-color: transparent !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 500px;
+}
+.swiper_stiky_position .swiper  .swiper-wrapper .swiper-slide img{
+    max-width: 500px;
+    object-fit: cover;
+}
+.properties_about_room{
+    position: relative;
+    max-width: 400px;
+    border-radius: 30px;
+    padding: 40px;
+    background-color: #fff;
+}
+.properties_about_room .size_bron_room{
+    border-bottom: 1px solid #D9E2F0;
+}
+.properties_about_room .size_bron_room .size_room{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+.properties_about_room .size_bron_room .size_room p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #1E2832BF;
+    max-width: 110px;
+}
+.properties_about_room .size_bron_room .size_room h1{
+    font-size: 40px;
+    font-weight: 500;
+    flex-shrink: 0;
+}
+.properties_about_room .size_bron_room .bron_room_btn{
+    display: flex;
+    gap: 16px;
+    margin: 35px 0;
+}
+.properties_about_room .size_bron_room .bron_room_btn button{
+    width: 50%;
+    padding: 15px 0;
+    background-color: var(--no_active);
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 60px;
+    border: none;
+    color: #FFFEFD;
+    transition: .3s;
+    cursor: pointer;
+}
+.properties_about_room .size_bron_room .bron_room_btn button:hover{
+    border-radius: 10px;
+}
+.about_prop{
+    position: relative;
+    padding: 30px 0;
+    border-bottom: 1px solid #D9E2F0;
+}
+.about_prop h1{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.about_prop .about_prop_desc_title {
+    display: flex;
+}
+.about_prop .about_prop_desc_title p{
+    font-size: 14px;
+    font-weight: 500;
+}
+.about_prop .about_prop_desc_title .about_prop_title{
+    width: 50%;
+}
+.about_prop .about_prop_desc_title .about_prop_title p{
+    color: #1E283280;
+}
+.about_prop .about_prop_desc_title .tit_desc{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.about_prop .about_prop_desc_title .about_prop_desc p{
+    color: #1E2832BF;
+}
+.swiper_btn_plan{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 35px;
+}
+.swiper_btn_plan button{
+    padding: 15px 0;
+    background-color: var(--goldColor);
+    font-size: 14px;
+    color: #FFFEFD;
+    font-weight: 500;
+    border: none;
+    width: 47%;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: .3s;
+}
+.navigation_rooms_swiper{
+    position: relative;
+    width: 180px;
+    display: flex;
+    align-items: center;
+}
+.navigation_rooms_swiper .swiper-pagination{
+    z-index: 112;
+}
+.navigation_rooms_swiper .swiper-pagination-bullet{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 12131;
+}
+.navigation_rooms_swiper > div{
+    background-color: transparent;
+}
+.navigation_rooms_swiper > div svg{
+    font-size: 20px !important;
+    width: 15px;
+    background-color: transparent;
+}
+.modal_open_rooms_layout{
+    position: absolute;
+    visibility: hidden;
+    font-size: 30px;
+    background-color: #fff;
+    color: var(--goldColor);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scale: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s;
+}
+.swiper_rooms_layout .swiper  .swiper-wrapper .swiper-slide:hover .modal_open_rooms_layout{
+    visibility: visible;
+    scale: 1;
+}
+.back_close_modal_swipe{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 12;
+    bottom: 0;
+}
+.swiper_modal_to{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px 0 20px 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px 40px 0 0;
+    z-index: 122131312;
+    overflow: hidden;
+}
+.max_parent_width_swipe_buttons{
+    width: var(--maxwidth);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.swiper_modal_to .max_width_swipe_modal{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.swiper_modal_to .max_width_swipe_modal .swiper_parent_modal{
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    top: 0;
+    z-index: 1;
+    height: 100%;
+
+}
+.swiper_modal_to .max_width_swipe_modal .swiper_parent_modal .swiper{
+    top: 0;
+    left: 0;
+    max-width: 750px;
+    height: 100%;
+    background-color: transparent;
+}
+.swiper_modal_to .max_width_swipe_modal .swiper_parent_modal .swiper .swiper-wrapper{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+.swiper_modal_to .max_width_swipe_modal .swiper_parent_modal .swiper  .swiper-wrapper .swiper-slide{
+    background-color: transparent !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper_modal_to .max_width_swipe_modal .swiper_parent_modal .swiper  .swiper-wrapper .swiper-slide img{
+    width: 390px;
+}
+.swiper_modal_to .max_width_swipe_modal .swiper_parent_modal .swiper .swiper-button-prev{
+    left: 0;
+}
+.swiper_modal_to .max_width_swipe_modal .swiper_parent_modal .swiper .swiper-button-prev svg, .swiper-button-next svg{
+    width: 20px;
+}
+.swiper_modal_to .max_width_swipe_modal .swiper_parent_modal .swiper .swiper-button-next{
+    right: 0;
+}
+.swiper_modal_to .max_width_swipe_modal .swiper_parent_modal .swiper  .swiper-wrapper .swiper-slide img{
+    max-width: 500px;
+    object-fit: contain;
+}
+.swiper_modal_to .max_width_swipe_modal .size_room_modal{
+    z-index: 13;
+    height: 130px;
+}
+.swiper_modal_to .max_width_swipe_modal .size_room_modal p{
+    font-size: 25px;
+    color: #1E2832BF;
+    font-weight: 500;
+    max-width: var(--maxwidth);
+    margin: auto;
+   
+}
+.swiper_modal_to .max_width_swipe_modal .size_room_modal h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.swiper_modal_to .max_width_swipe_modal .close_modal_swipe{
+    width: 55px;
+    height: 55px;
+    background-color: #F5F5F5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    cursor: pointer;
+    z-index: 12;
+}
+.swiper_modal_to .max_width_swipe_modal .close_modal_swipe svg{
+    font-size: 20px;
+    color: var(--goldColor);
+    transition: .3s;
+}
+.swiper_modal_to .max_width_swipe_modal .close_modal_swipe:hover{
+    background-color: var(--goldColor);
+    border-radius: 10px;
+}
+.swiper_modal_to .max_width_swipe_modal .close_modal_swipe:hover svg{
+    color: #FFFEFD;
+}
+.buttons_for_calling_swipe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1212;
+}
+.buttons_for_calling_swipe button{
+    padding: 13px 24px;
+    background-color: var(--goldColor);
+    font-size: 14px;
+    color: #FFFEFD;
+    font-weight: 500;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: .3s;
+}
+.buttons_for_calling_swipe .swiper_plan_button{
+    display: flex;
+    gap: 10px;
+
+}
+.buttons_for_calling_swipe button:hover{
+    border-radius: 10px;
+}
+.footer_room_layout{
+    background-color: rgba(0, 0, 255, 0.09);
+}
+.swiper_plan_button button:hover, .swiper_btn_plan button:hover{
+    border-radius: 10px;
+}
+.swiper_visual_images{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal_visual_swiper .swiper-slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.modal_visual_swiper .swiper-slide img{
+    width: 100%;
+    object-fit: cover;
+}
+.visual_square_size p{
+    color: #F5F5F5 !important;
+}
+.visual_square_size h1{
+    color: #FFFEFD;
+}
+.visual_buttons button{
+    background-color: #F5F5F5;
+    color: var(--maincolor);
+}
+
+
+.buttons_swiper_visual{
+    position: absolute;
+    width: var(--maxwidth);
+    z-index: 431 ;
+}
+

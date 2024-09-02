@@ -1,3 +1,6 @@
+.aboutus{
+    opacity: 0;
+}
 .home_page_img_aboutUs{
     position: relative;
     width: 100%;
@@ -139,7 +142,7 @@
 .about_video_page{
     margin-top: 140px;
 }
-.modal_open{
+.modal_open_about_us{
     position: relative;
     max-width: var(--maxwidth);
     margin: auto;
@@ -151,28 +154,45 @@
     box-shadow: 0 0px 14px -4px hsl(222, 53%, 19%),
     0 8px 8px -6px hsla(222, 52%, 19%, 0.12);
 }
-.modal_open::before{
+.modal_open_about_us::before{
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: hsla(222, 53%, 19%, 0.042);
 }
-.modal_open img{
+.modal_open_about_us img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 .play_modal_about_us{
+    text-decoration: none;
+    color: var(--maincolor);
     position: absolute;
     width: 120px;
     height: 120px;
-    background-color: hsla(0, 0%, 100%, 0.75);
+    background-color: #FFFFFFBF;
     border-radius: 50%;
     border: none;
-    font-size: 33px;
+    font-size: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: .3s;
+}
+.play_modal_about_us svg{
+    position: absolute;
+    left: 53%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.play_modal_about_us:hover{
+    color: #fff;
+}
+.star_changeWidth{
+    right: 0;
+    position: absolute;
+    bottom: 0;
 }

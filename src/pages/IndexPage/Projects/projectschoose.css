@@ -1,5 +1,6 @@
 .project_choose_house{
     position: relative;
+    opacity: 0;
 }
 .proj_home_parent{
     position: relative;
@@ -9,12 +10,18 @@
     justify-content: center;
     align-items: center;
 }
+.project_page_project{
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
 .home_class_img{
     width: 444px;
     transform: translateY(17%);
 }
 .containerAboutProj{
     position: relative;
+    padding-top: 100px;
+    margin-top: 30px;
 }
 .aboutProj{
     position: relative;
@@ -110,4 +117,121 @@
     color: hsla(210, 25%, 16%, 0.25);
     font-weight: 500;
     margin-top: 22px;
+}
+.geoplan_map{
+    margin-top: 170px;
+    position: relative;
+    z-index: 1;
+}
+.buttons_map_geoplan{
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    z-index: 13;
+    background-color: #ffffff;
+    border-radius: 100px;
+    padding: 4px;
+}
+.buttons_map_geoplan button{
+    font-size: 14px;
+    color: #000;
+    padding: 14px 29px;
+    border-radius: 100px;
+    border: none;
+    background-color: transparent;
+    transition: .3s;
+    z-index: 12;
+    cursor: pointer;
+}   
+.button_bg_color_buttons{
+    position: relative;
+}
+.bg_color_button_geoplan{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 118px;
+    height: 100%;
+    background-color: hsla(36, 23%, 48%, 0.25);
+    border-radius: 100px;
+    z-index: 11;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.special_pricePage{
+    position: relative;
+    max-width: var(--maxwidth);
+    margin: auto;
+    margin-top: 100px;
+}
+.special_pricePage .link_special_price{
+    position: relative;
+    width: 100%;
+}
+.special_pricePage .link_special_price a{
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: var(--goldColor);
+    width: 100%;
+    padding: 25px 0;
+    border-radius: 10px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.special_pricePage .link_special_price a span{
+    font-size: 20px;
+    color: hsla(0, 0%, 100%, 0.60);
+}
+.about_aparments{
+    max-width: var(--maxwidth);
+    margin: auto;
+    margin-top: 100px;
+}
+.images_life_in{
+    position: relative;
+    background-color: #f5f5f5;
+    border-radius: 45px;
+    padding: 100px 0 130px;
+    margin-top: 100px;
+}
+.apartment_renovation{
+    max-width: var(--maxwidth);
+    margin: auto;
+    margin-top: 100px;
+}
+.button_view_another_project_apart{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8.9vw;
+    cursor: pointer;
+}
+.button_view_another_project_apart a{
+    text-decoration: none;
+    color: #fff;
+    background-color: hsla(36, 23%, 48%, 0.45);
+    display: inline-block;
+    width: 61.52%;
+    padding: 28px 0;
+    font-size: 24px;
+    transition: .3s;
+    text-align: center;
+    border-radius: 100px;
+}
+.button_view_another_project_apart a:hover{
+    background-color: #97815F;
+}
+.map_projecthouse{
+    margin-top: 150px;
+}
+.logo_back_img{
+    position: absolute;
+    right: 0;
+    top: 0;
 }
