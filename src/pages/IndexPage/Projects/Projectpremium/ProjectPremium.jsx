@@ -50,12 +50,12 @@ const ProjectPremium = () => {
     variants={{visible: {transition:  { staggerChildren: 1 }}}}
     className='project_choose_house'>
       <Navbar bg_image_in_Proj={asset.navLogoBlack} color_nav_list={'proj_style_nav_list'} footerRef={footerRef} />
-      <div className="proj_home_parent">
+      {/* <div className="proj_home_parent">
           <HomepageProj img_Projecrs={asset.diamondPremium} />
-        </div>
+        </div> */}
         <div className="containerAboutProj">
           <img className='logo_back_img' src={asset.vektorLogoBackPorject} alt="logo_back" />
-          <AboutProj header_text_h1_proj={t('Project.swipe_proj_header')} header_text_parag_proj={t('Project.swipe_proj_parag')} image_proj_about={asset.projectpremiumgeoplanimg} addres_proj={'Projects.deadline_send.address'} deadline_proj={'Projects.deadline_send.date'} inform_about_proj={fetchDataProj[0]} />
+          <AboutProj header_text_h1_proj={t('Project.swipe_proj_header')} header_text_parag_proj={t('Project.swipe_proj_parag')} image_proj_about={asset.aboutprojimage} addres_proj={'Projects.deadline_send.address'} deadline_proj={'Projects.deadline_send.date'} inform_about_proj={fetchDataProj[0]} />
         </div>
         <div className='geoplan_map'>
             <div className="buttons_map_geoplan">
@@ -75,7 +75,7 @@ const ProjectPremium = () => {
               </div>
             </div>
             {
-              imageMapGeo == "geoplan" ? <MapGeoplan imagemapperlinkimg={asset.projectpremiumgeoplanimg}  pathImgeMapperArr={pathImgeMapper} projectName={"project-premium"} projIndexHouse="2"/>: <Mapcts /> 
+              imageMapGeo == "geoplan" ? <MapGeoplan imagemapperlinkimg={asset.projectmapimage}  pathImgeMapperArr={pathImgeMapper} projectName={"project-premium"} projIndexHouse="2"/>: <Mapcts /> 
             }
         </div>
         <section className='special_pricePage'>
@@ -88,7 +88,7 @@ const ProjectPremium = () => {
             </Link>
           </div>
         </section>
-        <div className="about_aparments">
+        {/* <div className="about_aparments">
             <AboutApartment img_about_apartment={asset.aboutaparthousepremium } headingChangLang={'Projects.apartmenAbout.h11'} parag1ChangLang={'Projects.apartmenAbout.p1'} parag2ChangLang={'Projects.apartmenAbout.p2'} />
         </div>
         <section className='images_life_in'>
@@ -96,8 +96,8 @@ const ProjectPremium = () => {
         </section>
         <section className='swiper_layout_apartments'>
           <LayoutApartment />
-        </section>
-        <section className='apartment_renovation'>
+        </section> */}
+        {/* <section className='apartment_renovation'>
           <Headepages headerClassDiv={'apartment_renovat'}  headerH1={t('Projects.otdelapartment.heading')} />
           <ApartmentRenovation />
           <div className="button_view_another_project_apart" onClick={()=> navigate('/projects')}>
@@ -105,7 +105,7 @@ const ProjectPremium = () => {
                 {t('Projects.otdelapartment.viewotheproject')}
               </a>
           </div>
-        </section>
+        </section> */}
         <section className='map_projecthouse'>
           <Mapcts />
         </section>

@@ -90,7 +90,7 @@ const Project = () => {
         <img src={asset.premiumHouseimg} />
       </div>
       </SwiperSlide>
-      <SwiperSlide>
+      {/* <SwiperSlide>
       <div className="swiper_left_right_element">
         <div className="left_choosing_proje">
           <div className="logo_project">
@@ -130,7 +130,7 @@ const Project = () => {
         <img src={asset.diamondHouseimg} />
       </div>
       </SwiperSlide>
-      
+       */}
     </Swiper>
     
             </div>

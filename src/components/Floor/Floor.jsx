@@ -24,22 +24,13 @@ const Floor = () => {
     })
   }
   const floorsSelect =[
-    { floor: 16, d_path: "M569 129.029H76V176.039H569V129.029Z" },
-    { floor: 15, d_path: "M569 176.039H76V223.049H569V176.039Z" },
-    { floor: 14, d_path: "M569 223.049H76V270.06H569V223.049Z" },
-    { floor: 13, d_path: "M569 270.06H76V317.07H569V270.06Z" },
-    { floor: 12, d_path: "M569 317.07H76V366.081H569V317.07Z" },
-    { floor: 11, d_path: "M570 366.081H76V413.091H569V366.081Z" },
-    { floor: 10, d_path: "M570 413.091H76V460.102H569V413.091Z" },
-    { floor: 9, d_path: "M570 460.102H76V509.113H569V460.102Z" },
-    { floor: 8, d_path: "M569 509.113H76V556.123H569V509.113Z" },
-    { floor: 7, d_path: "M569 556.123H76V603.133H569V556.123Z" },
-    { floor: 6, d_path: "M569 603.133H76V651.144H569V603.133Z" },
-    { floor: 5, d_path: "M570 651.144H76V699.155H569V651.144Z" },
-    { floor: 4, d_path: "M570 699.155H76V747.165H569V699.155Z" },
-    { floor: 3, d_path: "M570 747.165H76V795.176H569V747.165Z" },
-    { floor: 2, d_path: "M569 795.176H76V843.186H569V795.176Z" },
-    { floor: 1, d_path: "M570 843.182H76V894.199H569V843.187Z" },
+    { floor: 1, d_path: "M262.5 762.5L1181 790.5L1170 669L266 691.5L262.5 762.5Z" },
+    { floor: 2, d_path: "M250 678L1184 648.383L1180.5 551L254.004 614.751L250 678Z" },
+    { floor: 3, d_path: "M258.5 547.5L253.5 614L1179.5 550.5L1172 442L258.5 547.5Z" },
+    { floor: 4, d_path: "M261.5 481.5L257.5 547.5L1171.5 442L1165.5 345.5L261.5 481.5Z" },
+    { floor: 5, d_path: "M266 417.5L261.5 480.5L1166 346L1157.5 241.5L266 417.5Z" },
+    { floor: 6, d_path: "M271 354L265.5 417L1157 242L1147 140L271 354Z" },
+    { floor: 7, d_path: "M273.5 306.5L269 352.5L1146 140.5L1137 42L273.5 306.5Z" },
   ]
   useEffect(()=>{
     getFloorFetch()
@@ -52,7 +43,7 @@ const Floor = () => {
             <div className='max_width_select_floors'>
               <div className="left_page_select_floor">
                 <img src={asset.selectfloorimage} alt="select_image_floor" />
-                <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 640 970' fill='none' xmlns="http://www.w3.org/2000/svg">
+                <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 1409 997' fill='none' xmlns="http://www.w3.org/2000/svg">
                   {
                     floorsSelect.map((floorSelect, index)=>{
                         return <Link key={index+"floor_number"} 

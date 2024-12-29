@@ -81,12 +81,12 @@ const Footer = ({footerRef}) => {
                 </div>
                 <div className="right_inform_social_link">
                     <div className="header_right" style={{zIndex: 1}}>
-                        <h1><a href="tel:+998555179999">(+998) 555-17-9999</a></h1>
+                        <h1><a href="tel:+998555179999">+998 (95) 600 95 95</a></h1>
                         <a href="mailto:info@cts-ud.com">info@cts-ud.com</a><br />
-                        <a href="https://maps.app.goo.gl/8XtvqMXXB8ibaU9B6">{t("Footer.addressFooter")}</a>
+                        <a href="https://maps.google.com/maps?q=39.719326,64.537937&ll=39.719326,64.537937&z=16">{t("Footer.addressFooter")}</a>
                     </div>
                     <div className="list_social_link">
-                        <a href="https://t.me/CTS_UNITED_DEVELOPMANT"><BsTelegram></BsTelegram></a>
+                        <a href="https://t.me/ImranBuildings"><BsTelegram></BsTelegram></a>
                         <a href="https://www.youtube.com/@Cts-udv"><FaYoutube></FaYoutube></a>
                         <a href="https://www.instagram.com/cts_united_development"><FaInstagram></FaInstagram></a>
                     </div>

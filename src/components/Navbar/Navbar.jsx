@@ -29,7 +29,7 @@ return (
     <nav ref={refNav} className={navFix ? "active": null}>
       <div className={color_nav_list?`navbar ${color_nav_list}`: "navbar"}>
         <Link to='/'>
-          {bg_image_in_Proj ? <img src={bg_image_in_Proj} /> :  navFix ? <img src={asset.navLogoBlack} />:<img src={asset.navLogoWhite} /> }
+          {bg_image_in_Proj ? <img src={bg_image_in_Proj} /> :  navFix ? <img src={asset.navLogoBlack} />:<img src={asset.navLogoBlack} /> }
         </Link>
         {!tabletSize?
         <div className='response_nav'>

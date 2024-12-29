@@ -11,25 +11,34 @@ import { useTranslation } from 'react-i18next';
 import Mapcts from '../../pages/PagesMain/Mapcts/Mapcts';
 const roomPlan = [
     {roomPlanFloor:[
-        {d_path_room: "M511 566.5V589.5L446 590V566.5H422V590H354.5V566.5H342V426H396.5V331.5H529.5V566.5H511Z"},
-        {d_path_room: "M325 567V589V590H259.5V567H240.5V532.5H233.5V556.5H168.5V532.5H147.5V389H112V366H89V302H112V298H343V331.5H390V420.5H337.5V567H325Z"}, 
-        {d_path_room: "M343 256V292H112.5V289H90V224.5H112.5V200.5H148V57H168V34.5H234V57H241V23H259.5V1H325V23H340V256H343Z"}, 
-        {d_path_room: "M523.5 203.5V256.5L343 256V23H355V1H420V23H446.5V1H511V23H540.762V1H605.5V23H616.5V203.5H523.5Z"}, 
-        {d_path_room: "M715.17 202.896V256L896 255.499V22.0431H883.978V0H818.859V22.0431H792.311V0H727.693V22.0431H697.876V0H633.02V22.0431H622V202.896H715.17Z"}, 
-        {d_path_room: "M896 255V291H1125.59V288H1148V223.5H1125.59V199.5H1090.23V56H1070.31V33.5H1004.57V56H997.597V22H979.17V0H913.929V22H898.988V255H896Z"}, 
-        {d_path_room: "M913.784 566V588V589H979.066V566H998.003V531.5H1004.98V555.5H1069.76V531.5H1090.69V388H1126.08V365H1149V301H1126.08V297H895.844V330.5H849V419.5H901.326V566H913.784Z"}, 
-        {d_path_room: "M727.549 565.545V588.501L792.723 589V565.545H816.787V589H884.467V565.545H897V425.317H842.355V331H709V565.545H727.549Z"},
+        {d_path_room: "M49 877H382.5L382 49H49V877Z"},
+        {d_path_room: "M382.5 48.5L383 877H546.5V517H729.5V49.5L382.5 48.5Z"}, 
+        {d_path_room: "M547 519.5V877L886.5 876V823H1013V818.5V519.5H547Z"}, 
+        {d_path_room: "M1001 49.5V466H1351.5V49H1001"}, 
+        {d_path_room: "M1351.5 466.5V879.5H1001V824H1013.5V518.5H1001V466.5H1351.5Z"}, 
     ]}, 
     {roomPlanFloor:[
-        {d_path_room: "M519.5 353L518 629.5H326V595H330.5V444.5H381.5V353H519.5Z"},
-        {d_path_room: "M325.5 594V596L134 594V559.5H132V413H95.5V412V318.5H333.5V352.5L381.5 353V444.5H330.5V594H325.5Z"}, 
-        {d_path_room: "M334.5 311.5H97H95V217L132 216.781V69H132.5H133.5V36H228.5V34.5H327V275.5H334.5V311.5Z"}, 
-        {d_path_room: "M331.5 34.5V2.5L524.5 2V34H619V220H520V275H327V34.5H331.5Z"}, 
-        {d_path_room: "M907.5 34.5V2.5L714.5 2V34H620V220H719V275H912V34.5H907.5Z"}, 
-        {d_path_room: "M905 312H1142H1144V217.159L1107.08 216.939V68.6245H1106.58H1105.58V35.5054H1010.78V34H912.484V275.87H905V312Z"}, 
-        {d_path_room: "M913 593.996V596L1104.5 593.996V559.434H1106.5V412.67H1143V411.668V318H905V352.061L857 352.562V444.227H908V593.996H913Z"}, 
-        {d_path_room: "M720 353L721.496 629H913V594.562H908.512V444.335H857.643V353H720Z"},
-    ]} 
+        {d_path_room: "M39.5 533H272V328.5H39.5V533Z"},
+        {d_path_room: "M39.5 38.5V328L272.5 327.5V38.5H39.5Z"}, 
+        {d_path_room: "M705.5 39.5H465.5L468 327.5H705.5V39.5Z"}, 
+        {d_path_room: "M942 39.5H706V327.5H942V39.5Z"}, 
+        {d_path_room: "M1373.5 39.5H1134.5L1136 325L1373.5 327V39.5Z"}, 
+        {d_path_room: "M1374 535.5V328.5L1141.5 325.5V535.5H1374Z"}, 
+        {d_path_room: "M1140 535.5H937.5V328.5H1140.5V535.5"}, 
+        {d_path_room: "M937 328.5V535.5L706 536.5V327.5L937 328.5Z"},
+        {d_path_room: "M473 536.5H705V328H473V536.5Z"},
+        {d_path_room: "M472.5 536.5L272.5 533V328H472.5V535.793"},
+    ]}
+    , 
+    {roomPlanFloor:[
+        {d_path_room: "M31.5 539.5H270L268.5 39.5H31.5V539.5Z"},
+        {d_path_room: "M705.5 40H465L468 538H705.5V40Z"}, 
+        {d_path_room: "M943.5 40.5H705.5L707.5 538.5H943.5V40.5Z"}, 
+        {d_path_room: "M1382.5 39H1141.5L1145 537.5H1382.5V39Z"}, 
+        {d_path_room: "M946.5 538H1139.5V326.5H946.5V538Z"}, 
+        {d_path_room: "M269.5 539.5H468L464.5 332.5H269.5V539.5Z"}, 
+    ]}
+   
 ]
 const btns_arr_select_floor = Array.from({ length: 16 }, (v, i) => i+1);
 const Selectplan = () => {
@@ -47,7 +56,7 @@ const Selectplan = () => {
     const [ num, setNum] = useState();
     let minRoomValue = []; 
     const floorRoomsApi = async ()=>{
-        contextApiFloor.datasFetch.filter(stageId => stageId.stage == params.id).map(elem=>{
+        contextApiFloor.datasFetch.filter(stageId =>params.id == 0 ?stageId.stage == -1 : stageId.stage == params.id).map(elem=>{
             parentApi.push(elem)
             setFloorApiRooms(parentApi)
         })
@@ -83,6 +92,8 @@ const Selectplan = () => {
     useEffect(()=>{
         setNum((Math.min(...minRoomValue.map(Number))))
     },[floorApiRooms])
+    console.log(floorApiRooms);
+    
     return (
     <>
     <div className='res_toback_select_floors'>
@@ -93,9 +104,9 @@ const Selectplan = () => {
             {
                 btns_arr_select_floor.map((btn_arr_select_floor, index)=>{
                     return( 
-                    <Link key={index+"btns_key_select_plan"} className={btn_arr_select_floor == params.id? "active": ""}
-                        to={`/${params.projectName}/${params.projIndex}/blok-id/${params.idBlock}/floor/${btn_arr_select_floor}`}>
-                            {index+1}
+                    <Link key={index+"btns_key_select_plan"} className={index == params.id? "active": ""}
+                        to={`/${params.projectName}/${params.projIndex}/blok-id/${params.idBlock}/floor/${index}`}>
+                            {index}
                     </Link>
                     )    
             })
@@ -105,8 +116,8 @@ const Selectplan = () => {
         
         <motion.div className={disbledImages?"div_container_select_plan_image disabledPlanImages":"div_container_select_plan_image"} >
             
-            <img src={floorApiRooms.find(floor => floor.stage == "1")?asset.selectplanimgfirstfloor:asset.selectplanimg} alt="selectplanimg" />
-            <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 1240 644' fill='none' xmlns="http://www.w3.org/2000/svg">
+            <img src={params.id == 0 ? asset.selectplanimgzedfloor : params.id == 1 ? asset.selectplanimgfirstfloor : asset.selectplanimg} alt="selectplanimg" />
+            <svg preserveAspectRatio='xMidYMid slice' viewBox={`0 0 1411 ${params?.id == 0? 575 : params?.id == 1 ? 575 : 916}`} fill='none' xmlns="http://www.w3.org/2000/svg">
                 
                     {floorApiRooms.map((floorRoomsLayout, index)=>{
                         minRoomValue.push(+floorRoomsLayout.number)
@@ -120,10 +131,10 @@ const Selectplan = () => {
                                     onClick={()=> setDisabledImages(true)}
                                     >
                                         
-                                    <path className={floorRoomsLayout.status == 3?"disabledred": ""} style={floorRoomsLayout.stage == 1 ?{
+                                    <path className={floorRoomsLayout.status == 3?"disabledred lightLight": ""} style={floorRoomsLayout.stage == 1 ?{
                                         translate: "38px 0px",
                                         scale: "0.94"
-                                    }:null} xmlns="http://www.w3.org/2000/svg" d={floorRoomsLayout.stage == 1?roomPlan[0].roomPlanFloor[index].d_path_room:roomPlan[1].roomPlanFloor[index].d_path_room}>
+                                    }:null} xmlns="http://www.w3.org/2000/svg" d={params.id == 0 ? roomPlan[2]?.roomPlanFloor[index]?.d_path_room : params.id == 1 ?roomPlan[1]?.roomPlanFloor[index]?.d_path_room: roomPlan[0]?.roomPlanFloor[index]?.d_path_room}>
                                         
                                     </path>
                                     </Link>

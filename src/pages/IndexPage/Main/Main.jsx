@@ -26,10 +26,10 @@ function Main() {
         <Navbar footerRef={footerRef} />
         <Home />
         <Project />
-        <OurSkills />
+        {/* <OurSkills /> */}
         <Aboutuslink />
-        <Control />
-        <Partners />
+        {/* <Control /> */}
+        {/* <Partners /> */}
         <News />
         <Mapcts />
         <Footer footerRef={footerRef} />

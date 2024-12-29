@@ -2,13 +2,12 @@ import { useContext, useEffect } from "react";
 import axios from "axios";
 const useAxios = () => {
 const axiosPrivate = axios.create({
-	baseURL: import.meta.env.REACT_APP_RES_BASE
+	baseURL: import.meta.env.REACT_APP_RES_BASE,
+	headers:{
+		"Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2ltcmFuYmFjLnV6L2FwaS9sb2dpbiIsImlhdCI6MTcyNjAzMzk4NywiZXhwIjoxNzI4NjI1OTg3LCJuYmYiOjE3MjYwMzM5ODcsImp0aSI6IjNRWjI5bFA5cWhrR0txVk8iLCJzdWIiOiIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.xAsX9e3a9HWMGRNvMBvAMkNiNnYVbP2vhdVdAWISCKQ"
+	}
 })
-
 const user = JSON.parse(localStorage.getItem("user"))
-console.log(
-	axiosPrivate
-);
 
     useEffect(() => {
 		const requestIntercept = axiosPrivate.interceptors.request.use(
@@ -42,6 +41,7 @@ console.log(
 			axiosPrivate.interceptors.request.eject(requestIntercept)
 			axiosPrivate.interceptors.response.eject(responseIntercept)
 		}
+
 	}, [user])
 
 	return axiosPrivate

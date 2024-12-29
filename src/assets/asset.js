@@ -1,4 +1,4 @@
-import navLogoBlack from './navLogoBlack.svg';
+import navLogoBlack from './navLogoBlack.webp';
 import navLogoWhite from './navLogoWhite.svg';
 import diamondHouse from './diamondHouse.webp';
 import diamondPremium from './diamondPremium.webp';
@@ -19,12 +19,13 @@ import aboutaparthousepremium from './aboutaparthousepremium.webp'
 import selectfloorimage from './selectfloor.webp'
 import selectplanimg from './selectplanimg.webp'
 import selectplanimgfirstfloor from './selectplanningimagefirstfloor.webp'
+import selectplanimgzedfloor from './selectplanningimagezedfloor.webp'
 import korpusfour from './PlanImages/GenPlan/firstFloorGenPlan.webp'
 import starLast from './startvector.png'
-
+import aboutprojimage from './aboutprojimage.webp'
 import diamondHouseIndexImage from './diamondHouseImgmain.webp'
 import premiumHouseIndexImage from './premiumhouseimgmain.webp'
-
+import projectmapimage from './projectmapimage.webp'
 import floor1layout from './PlanImages/PlanEtaja/firstFloorFirstRoom.webp'
 import floor1layout2 from './PlanImages/PlanEtaja/firstFloorSecondRoom.webp'
 import floor1layout3 from './PlanImages/PlanEtaja/firstFloorThirdRoom.webp'
@@ -37,7 +38,7 @@ import floor2layout4 from './PlanImages/PlanEtaja/secondFloorFourthRoom.webp'
 
 import firstFloorGenPlan from './PlanImages/GenPlan/firstFloorGenPlan.webp'
 import firstFloorGenPlan2 from './PlanImages/GenPlan/firstFloorGenplan2.webp'
-import firstFloorPlanirovka from './PlanImages/Planirovka/firstFloorPlanirovka.webp'
+import firstFloorPlanirovka from './PlanImages/Planirovka/firstFloorFirstPlanirovka.webp'
 
 import firstFloorSecondGenPlan from './PlanImages/GenPlan/firstFloorSecondGenPlan.webp'
 import firstFloorSecondGenPlan2 from './PlanImages/GenPlan/firstFloorSecondGenPlan2.webp'
@@ -155,7 +156,10 @@ export const asset ={
     diamondHouseIndexImage,
     premiumHouseIndexImage,
     vektorLogoBackPorject,
-    premiumHouseimg
+    premiumHouseimg,
+    aboutprojimage,
+    selectplanimgzedfloor,
+    projectmapimage
 }
 export const skillsImages =[
     {skillsImage: skillimg1},
@@ -300,7 +304,7 @@ export const layoutfImg =[
 ]
 export const imagesLayout =[
     {
-        square: 37.5,
+        square: 52.8,
         layoutGenPlan1: firstFloorGenPlan,
         layoutGenPlan2: firstFloorGenPlan2,
         layoutPlanirovka: firstFloorPlanirovka,

@@ -136,7 +136,7 @@ const RoomsLayout = () => {
                         <p>{t("Projects.shaxmatka.filter.stage")}</p>
                     </div>
                     <div className="char_desc about_prop_desc tit_desc">
-                        <p>{roomsDatas.plan.created_at.slice(0,10)}</p>
+                        {/* <p>{roomsDatas.plan.created_at.slice(0,10)}</p> */}
                         <p>{paramsRoom.projectName == "project-house"?"Diamond House":"Premium House"}</p>
                         <p>{t("Projects.shaxmatka.filter.korpus")}-{paramsRoom.idBlock}</p>
                         <p>{roomsDatas.rooms}-{t("selectPlan.komnatnost2")}</p>
